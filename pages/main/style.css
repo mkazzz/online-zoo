@@ -54,7 +54,7 @@ h2 {
 h3 {
   font-weight: 400;
   font-style: normal;
-  font-size: 3.4rem;
+  font-size: 3.6rem;
   color: var(--black_blue);
   text-align: center;
   line-height: 130%;
@@ -392,6 +392,89 @@ ul.footer_social li:before {
   gap: 10px;
 }
 
+
+.footer__form {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.footer_email {
+  padding: 10px 7px 10px 10px;
+  width: 228px;
+  height: 42px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  color: var(--light_gray);
+  background-color: transparent;
+  border: 1px solid orange;
+  border-radius: 2px;
+}
+
+input:focus {
+  outline: none;
+}
+
+form:invalid input:focus {
+  color: var(--red);
+}
+
+form:valid input:focus {
+  color: var(--green);
+}
+
+input:default {
+  border: 0.8px solid var(--orange);
+  ;
+}
+
+input:focus:invalid {
+  border: 0.8px solid var(--rad);
+}
+
+input:focus:valid {
+  border: 0.8px solid var(--green);
+}
+
+form:invalid .footer_email_btn {
+  border: 1px solid var(--green);
+  background: white;
+}
+
+form:valid .footer_email_btn {
+  border: 1px solid var(--black_blue);
+  color: var(--black_blue);
+}
+
+form:valid .footer_email_btn:active {
+  transform: scale(1);
+  color: var(--green);
+  border: 1px solid var(--green);
+}
+
+.footer_email_btn {
+  width: 129px;
+  height: 42px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  background: var(--light_gray);
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+
+.footer_email_button:active {
+  color: var(--green);
+  border: 1px solid var(--green);
+}
+
+
+
 .footer_right h4 {
   color: white;
 
@@ -434,7 +517,10 @@ section#backstage {
 
   width: 100%;
   max-width: 100%;
-  padding: 14rem 0 0;
+  padding: 14rem 0 17.8rem;
+  background-image: url(../../assets/images/flower_foto1.png);
+  background-position: right -29px bottom 94px;
+  background-repeat: no-repeat;
 
 }
 
@@ -480,9 +566,13 @@ section#backstage {
 /* end of section backstage */
 
 #animals-gallery {
-  margin-top: 178px;
-  margin-bottom: 10rem;
+  padding-bottom: 10rem;
+
+  background: url(../../assets/images/strelitzia\ 1.png) right 0px bottom no-repeat,
+    url(../../assets/images/palm_foto.png) left 0px bottom no-repeat;
 }
+
+
 
 .pets_wrapper {
   display: flex;
@@ -501,6 +591,54 @@ section#backstage {
 
 
 }
+
+.pets_arrows {
+  position: relative;
+  top: 463px;
+  left: 65px;
+  display: flex;
+  justify-content: space-between;
+  width: 1322px;
+}
+
+.pets_arrows_right,
+.pets_arrows_left {
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  height: 62px;
+  border: none;
+  width: 62px;
+}
+
+.pets_arrows_right {
+  background-image: url(../../assets/icons/arrow_elips_1.svg), var(--orange-gradient);
+}
+
+.pets_arrows_left {
+  background-image: url(../../assets/icons/arrow_elips_2.svg), var(--orange-gradient);
+}
+
+.pets_arrows_right:hover {
+  background-image: url(../../assets/icons/arrow_elips_1.svg), var(--orange_button_hover);
+
+}
+
+.pets_arrows_left:hover {
+  background-image: url(../../assets/icons/arrow_elips_2.svg), var(--orange_button_hover);
+
+}
+
+.pets_arrows_right:active {
+  background-image: url(../../assets/icons/arrow_elips_1.svg), var(--green);
+
+}
+
+.pets_arrows_left:active {
+  background-image: url(../../assets/icons/arrow_elips_2.svg), var(--green);
+
+}
+
 
 .pets_item_border {
   border-radius: 5px;
@@ -642,9 +780,7 @@ img.pets_item_image {
 /* end of pick and feed section */
 
 /* testimonials */
-#testimonials h3 {
-  margin-top: 14rem;
-}
+
 
 .testimonials_wrapper {
   display: flex;
@@ -658,5 +794,148 @@ img.pets_item_image {
   background: var(--pink_gradient);
   border-radius: 20px;
 }
+
+
+
+
+#testimonials {
+
+  background-image: url(../../assets/images/leav_foto.png);
+  background-position: right -40px bottom -134px;
+  background-repeat: no-repeat;
+  padding-bottom: 176px;
+
+}
+
+#testimonials h3 {
+  font-size: 3.6rem;
+  line-height: 130%;
+  ;
+  margin-top: 14rem;
+}
+
+.testimonials_wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+
+
+.testimonials_slider {
+  overflow: hidden;
+  position: relative;
+  height: 390px;
+  padding: 1px;
+  margin-top: 5rem;
+}
+
+.testimonials_cards {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  gap: 29px;
+  transition: 0.5s;
+}
+
+.testimonial_card_frame {
+  display: flex;
+  padding: 2px;
+  background: var(--pink_gradient);
+  border-radius: 20px;
+}
+
+.testimonial_card {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 264px;
+  height: 386px;
+  padding: 14px 13px 19px 15px;
+  background-color: var(--gray_light);
+  border-radius: 20px;
+}
+
+.testimonial_card_visitor {
+  display: flex;
+  gap: 10px;
+}
+
+.testimonial_card_img {
+  width: 37px;
+  height: 37px;
+  background-image: url(../../assets/images/user_icon.png);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.testimonial_card_name {
+  margin-top: 0rem;
+  margin-bottom: 0rem;
+  line-height: 120%;
+  color: #000000;
+}
+
+.testimonial_card_data {
+  display: flex;
+  gap: 6px;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 120%;
+  color: var(--gray_smoky);
+}
+
+.testimonial_card_data p,
+.testimonial_card_message {
+  margin-top: 0rem;
+  margin-bottom: 0rem;
+}
+
+.testimonial_card_img2 {
+  background-image: url(../../assets/images/Ellipse\ 2.png);
+}
+
+.testimonial_card_img3 {
+  background-image: url(../../assets/images/Ellipse\ 2-1.png);
+}
+
+.testimonial_card_img4 {
+  background-image: url(../../assets/images/Ellipse\ 2-2.png);
+}
+
+.testimonial_card_message {
+  overflow: hidden;
+  max-height: 308px;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 120%;
+  color: var(--gray);
+}
+
+.scroll_wrapper {
+  width: 116rem;
+  height: 8px;
+  display: flex;
+}
+
+.testimonials_scroll {
+  align-self: center;
+  width: 599px;
+  height: 6px;
+  margin-bottom: 8px;
+}
+
+.testimonials_scroll::before {
+  content: '';
+
+
+
+  background: var(--pink_gradient);
+  border-radius: 5px;
+}
+
+
+
 
 /* end of testimonials */
