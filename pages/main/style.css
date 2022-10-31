@@ -481,15 +481,37 @@ section#backstage {
 
 #animals-gallery {
   margin-top: 178px;
+  margin-bottom: 10rem;
 }
 
 .pets_wrapper {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 3rem;
+  gap: 2rem 3rem;
   width: 100%;
   margin: 0 auto;
+  margin-bottom: 8rem;
+}
+
+.pets_item {
+  background: white;
+
+  border-radius: 4px;
+
+
+}
+
+.pets_item_border {
+  border-radius: 5px;
+
+  background: linear-gradient(113.96deg, #FA6F32 1.49%, #FE9013 101.44%);
+
+  padding: 1px;
+}
+
+img.pets_item_image {
+  width: 364px;
 }
 
 .pets_item_desc_wrapper {
@@ -522,8 +544,8 @@ section#backstage {
   font-style: normal;
   font-weight: 300;
   font-size: 1.5rem;
-  line-height: 120%;
-  margin: 0 0 0 1.6rem;
+  line-height: 110%;
+  margin: -0.2rem 0 1.3rem 1.6rem;
 }
 
 .food_icon {
