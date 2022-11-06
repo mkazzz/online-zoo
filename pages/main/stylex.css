@@ -501,6 +501,18 @@ figure:hover .pet_caption {
 
 }
 
+.pick_wrapper a {
+  text-decoration-color: orange;
+  /* background-color: transparent; */
+  color: var(--black_blue);
+}
+
+.pick_wrapper a:hover {
+
+  background-color: white;
+
+}
+
 .h2_orange {
   color: #FE9013;
   text-align: center;
