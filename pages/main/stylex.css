@@ -641,7 +641,7 @@ p.description {
 
 .testimonials-card {
   min-width: 268px;
-
+  margin: 2px;
   height: 390px;
   border-image: linear-gradient;
   background: #F1F3F2;
