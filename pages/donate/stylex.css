@@ -923,6 +923,18 @@ p.widget-amount {
 
 }
 
+/* Chrome, Safari, Edge, Opera */
+input.donate-form-input-cash::-webkit-outer-spin-button,
+input.donate-form-input-cash::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input.donate-form-input-cash[type=number] {
+  -moz-appearance: textfield;
+}
+
 .donate-form-suffix {
   background: url(../../assets/icons/usd_icon.svg);
   height: 20px;
