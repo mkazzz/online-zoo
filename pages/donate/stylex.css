@@ -1165,6 +1165,10 @@ ul.footer_social li a {
 
 }
 
+ul.footer_social li a:hover {
+  color: var(--orange_button_hover);
+}
+
 ul.footer_social li a:active {
   color: var(--green);
 }
