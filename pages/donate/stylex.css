@@ -1269,12 +1269,17 @@ input:focus:invalid {
 }
 
 input:focus:valid {
-  border: 0.8px solid var(--green);
+  border: 0.8px solid var(--orange_button_hover);
 }
 
-form:invalid .footer_email_btn {
-  border: 1px solid var(--green);
-  background: white;
+form:invalid input:focus~.footer_email_btn {
+  border: 1px solid var(--rad);
+  color: var(--rad)
+}
+
+form:invalid button.footer_email_btn:hover {
+  color: var(--rad);
+  background: transparent;
 }
 
 form:valid .footer_email_btn {
@@ -1285,7 +1290,12 @@ form:valid .footer_email_btn {
 form:valid .footer_email_btn:active {
   transform: scale(1);
   color: var(--green);
-  border: 1px solid var(--green);
+  border: 1px solid #4B9200;
+}
+
+button.footer_email_btn:hover {
+  color: green;
+  background: transparent;
 }
 
 .footer_email_btn {
@@ -1295,9 +1305,13 @@ form:valid .footer_email_btn:active {
   font-weight: 400;
   font-size: 16px;
   line-height: 140%;
-  background: var(--light_gray);
   border-radius: 5px;
   cursor: pointer;
+
+  background: whitesmoke;
+
+
+  border: 1px solid var(--black_blue);
 }
 
 
@@ -1308,6 +1322,10 @@ form:valid .footer_email_btn:active {
 }
 
 
+.footer_email_button:hover {
+  color: var(--green);
+  border: 1px solid var(--green);
+}
 
 .footer_right h4 {
   color: white;
